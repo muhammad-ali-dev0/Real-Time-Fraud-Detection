@@ -1,0 +1,214 @@
+<svg viewBox="0 0 1020 540" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <!-- Background -->
+  <rect width="1020" height="540" fill="#090d16" rx="12"/>
+
+  <!-- Title -->
+  <text x="510" y="36" text-anchor="middle" fill="#f1f5f9" font-size="17" font-weight="700" letter-spacing="1.5">
+    Real-Time Fraud Detection · Streaming Architecture
+  </text>
+
+  <!-- Lane backgrounds -->
+  <rect x="10"  y="52" width="145" height="450" rx="6" fill="#0f1623" stroke="#1e2a3a" stroke-width="1"/>
+  <rect x="165" y="52" width="145" height="450" rx="6" fill="#0f1623" stroke="#1e2a3a" stroke-width="1"/>
+  <rect x="320" y="52" width="180" height="450" rx="6" fill="#0f1623" stroke="#1e2a3a" stroke-width="1"/>
+  <rect x="510" y="52" width="180" height="450" rx="6" fill="#0f1623" stroke="#1e2a3a" stroke-width="1"/>
+  <rect x="700" y="52" width="145" height="450" rx="6" fill="#0f1623" stroke="#1e2a3a" stroke-width="1"/>
+  <rect x="855" y="52" width="155" height="450" rx="6" fill="#0f1623" stroke="#1e2a3a" stroke-width="1"/>
+
+  <!-- Lane labels -->
+  <text x="82"  y="72" text-anchor="middle" fill="#475569" font-size="10" font-weight="700" letter-spacing="1">SOURCE</text>
+  <text x="237" y="72" text-anchor="middle" fill="#475569" font-size="10" font-weight="700" letter-spacing="1">KAFKA</text>
+  <text x="400" y="72" text-anchor="middle" fill="#475569" font-size="10" font-weight="700" letter-spacing="1">SPARK ENGINE</text>
+  <text x="600" y="72" text-anchor="middle" fill="#475569" font-size="10" font-weight="700" letter-spacing="1">FEATURE STORE</text>
+  <text x="772" y="72" text-anchor="middle" fill="#475569" font-size="10" font-weight="700" letter-spacing="1">DASHBOARD</text>
+  <text x="932" y="72" text-anchor="middle" fill="#475569" font-size="10" font-weight="700" letter-spacing="1">MONITORING</text>
+
+  <!-- ══ PRODUCER ══ -->
+  <rect x="18" y="90" width="129" height="70" rx="7" fill="#0e2340" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="82" y="115" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="700">Transaction</text>
+  <text x="82" y="130" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="700">Producer</text>
+  <text x="82" y="148" text-anchor="middle" fill="#60a5fa" font-size="9">100+ TPS · Python</text>
+
+  <!-- Fraud patterns box -->
+  <rect x="18" y="178" width="129" height="120" rx="7" fill="#0e2340" stroke="#3b82f6" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="82" y="196" text-anchor="middle" fill="#7dd3fc" font-size="10" font-weight="600">Fraud Patterns</text>
+  <text x="82" y="212" text-anchor="middle" fill="#60a5fa" font-size="9">• High amount</text>
+  <text x="82" y="226" text-anchor="middle" fill="#60a5fa" font-size="9">• High-risk MCC</text>
+  <text x="82" y="240" text-anchor="middle" fill="#60a5fa" font-size="9">• Velocity abuse</text>
+  <text x="82" y="254" text-anchor="middle" fill="#60a5fa" font-size="9">• Card testing</text>
+  <text x="82" y="268" text-anchor="middle" fill="#60a5fa" font-size="9">• Impossible country</text>
+  <text x="82" y="284" text-anchor="middle" fill="#60a5fa" font-size="9">• Night-owl pattern</text>
+
+  <!-- ══ KAFKA ══ -->
+  <!-- Transactions topic -->
+  <rect x="173" y="90" width="129" height="60" rx="7" fill="#1a150a" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="237" y="115" text-anchor="middle" fill="#fde68a" font-size="11" font-weight="700">transactions</text>
+  <text x="237" y="130" text-anchor="middle" fill="#d97706" font-size="9">6 partitions · snappy</text>
+
+  <!-- Schema Registry -->
+  <rect x="173" y="170" width="129" height="50" rx="7" fill="#1a150a" stroke="#d97706" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="237" y="192" text-anchor="middle" fill="#fde68a" font-size="10" font-weight="600">Schema Registry</text>
+  <text x="237" y="208" text-anchor="middle" fill="#d97706" font-size="9">Avro / JSON schemas</text>
+
+  <!-- Kafka UI -->
+  <rect x="173" y="234" width="129" height="50" rx="7" fill="#1a150a" stroke="#d97706" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="237" y="256" text-anchor="middle" fill="#fde68a" font-size="10" font-weight="600">Kafka UI</text>
+  <text x="237" y="272" text-anchor="middle" fill="#d97706" font-size="9">:8082 · topic browser</text>
+
+  <!-- fraud-alerts topic -->
+  <rect x="173" y="300" width="129" height="60" rx="7" fill="#1a150a" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="237" y="325" text-anchor="middle" fill="#fde68a" font-size="11" font-weight="700">fraud-alerts</text>
+  <text x="237" y="345" text-anchor="middle" fill="#d97706" font-size="9">output topic</text>
+
+  <!-- ══ SPARK ENGINE ══ -->
+  <rect x="328" y="88" width="164" height="240" rx="7" fill="#0f1f10" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="410" y="108" text-anchor="middle" fill="#86efac" font-size="11" font-weight="700">PySpark Streaming</text>
+
+  <rect x="338" y="116" width="144" height="32" rx="4" fill="#142014"/>
+  <text x="410" y="132" text-anchor="middle" fill="#4ade80" font-size="9" font-weight="600">Structured Streaming</text>
+  <text x="410" y="144" text-anchor="middle" fill="#4ade80" font-size="9">watermark · 30s</text>
+
+  <rect x="338" y="156" width="144" height="32" rx="4" fill="#142014"/>
+  <text x="410" y="172" text-anchor="middle" fill="#4ade80" font-size="9" font-weight="600">Rule Engine</text>
+  <text x="410" y="184" text-anchor="middle" fill="#4ade80" font-size="9">7 instant rules</text>
+
+  <rect x="338" y="196" width="144" height="44" rx="4" fill="#142014"/>
+  <text x="410" y="213" text-anchor="middle" fill="#4ade80" font-size="9" font-weight="600">Window Aggregations</text>
+  <text x="410" y="226" text-anchor="middle" fill="#4ade80" font-size="9">5-min sliding / 1-min slide</text>
+  <text x="410" y="238" text-anchor="middle" fill="#4ade80" font-size="9">count · spend · devices</text>
+
+  <rect x="338" y="248" width="144" height="32" rx="4" fill="#142014"/>
+  <text x="410" y="264" text-anchor="middle" fill="#4ade80" font-size="9" font-weight="600">Fraud Scorer</text>
+  <text x="410" y="276" text-anchor="middle" fill="#4ade80" font-size="9">score ∈ [0,1] · threshold 0.65</text>
+
+  <!-- Spark UI badge -->
+  <rect x="328" y="345" width="164" height="40" rx="5" fill="#122010" stroke="#16a34a" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="410" y="363" text-anchor="middle" fill="#86efac" font-size="10" font-weight="600">Spark UI</text>
+  <text x="410" y="378" text-anchor="middle" fill="#4ade80" font-size="9">:4040 · live query stats</text>
+
+  <!-- Benchmark -->
+  <rect x="328" y="400" width="164" height="50" rx="5" fill="#122010" stroke="#16a34a" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="410" y="420" text-anchor="middle" fill="#86efac" font-size="10" font-weight="600">Latency Benchmark</text>
+  <text x="410" y="435" text-anchor="middle" fill="#4ade80" font-size="9">p50 / p90 / p99 / F1</text>
+  <text x="410" y="448" text-anchor="middle" fill="#4ade80" font-size="9">probe-based measurement</text>
+
+  <!-- ══ REDIS FEATURE STORE ══ -->
+  <rect x="518" y="88" width="164" height="200" rx="7" fill="#10141a" stroke="#06b6d4" stroke-width="1.5"/>
+  <text x="600" y="108" text-anchor="middle" fill="#67e8f9" font-size="11" font-weight="700">Redis Feature Store</text>
+
+  <rect x="528" y="116" width="144" height="36" rx="4" fill="#0a1920"/>
+  <text x="600" y="133" text-anchor="middle" fill="#22d3ee" font-size="9" font-weight="600">Per-Account Counters</text>
+  <text x="600" y="147" text-anchor="middle" fill="#22d3ee" font-size="9">txn_count · spend (TTL 5m)</text>
+
+  <rect x="528" y="160" width="144" height="36" rx="4" fill="#0a1920"/>
+  <text x="600" y="177" text-anchor="middle" fill="#22d3ee" font-size="9" font-weight="600">Alert Store</text>
+  <text x="600" y="191" text-anchor="middle" fill="#22d3ee" font-size="9">last 100/account · 24h TTL</text>
+
+  <rect x="528" y="204" width="144" height="36" rx="4" fill="#0a1920"/>
+  <text x="600" y="221" text-anchor="middle" fill="#22d3ee" font-size="9" font-weight="600">Live Dashboard Feed</text>
+  <text x="600" y="235" text-anchor="middle" fill="#22d3ee" font-size="9">fraud:live_alerts (ring buffer)</text>
+
+  <rect x="528" y="248" width="144" height="28" rx="4" fill="#0a1920"/>
+  <text x="600" y="264" text-anchor="middle" fill="#22d3ee" font-size="9" font-weight="600">Global Stats Counters</text>
+  <text x="600" y="276" text-anchor="middle" fill="#22d3ee" font-size="9">total_alerts · amount_flagged</text>
+
+  <!-- ══ STREAMLIT DASHBOARD ══ -->
+  <rect x="708" y="88" width="129" height="200" rx="7" fill="#18100e" stroke="#f97316" stroke-width="1.5"/>
+  <text x="772" y="108" text-anchor="middle" fill="#fed7aa" font-size="11" font-weight="700">Streamlit</text>
+  <text x="772" y="122" text-anchor="middle" fill="#fb923c" font-size="9">:8501 · auto-refresh 2s</text>
+
+  <rect x="718" y="132" width="109" height="26" rx="3" fill="#22100a"/>
+  <text x="772" y="149" text-anchor="middle" fill="#fb923c" font-size="9">KPI Cards</text>
+
+  <rect x="718" y="164" width="109" height="26" rx="3" fill="#22100a"/>
+  <text x="772" y="181" text-anchor="middle" fill="#fb923c" font-size="9">Live Alert Feed</text>
+
+  <rect x="718" y="196" width="109" height="26" rx="3" fill="#22100a"/>
+  <text x="772" y="213" text-anchor="middle" fill="#fb923c" font-size="9">Score Histogram</text>
+
+  <rect x="718" y="228" width="109" height="26" rx="3" fill="#22100a"/>
+  <text x="772" y="245" text-anchor="middle" fill="#fb923c" font-size="9">Latency Percentiles</text>
+
+  <rect x="718" y="260" width="109" height="26" rx="3" fill="#22100a"/>
+  <text x="772" y="277" text-anchor="middle" fill="#fb923c" font-size=  "9">Rule Frequency Chart</text>
+
+  <!-- ══ MONITORING ══ -->
+  <rect x="863" y="88" width="139" height="90" rx="7" fill="#0f180f" stroke="#84cc16" stroke-width="1.5"/>
+  <text x="932" y="108" text-anchor="middle" fill="#d9f99d" font-size="11" font-weight="700">Prometheus</text>
+  <text x="932" y="124" text-anchor="middle" fill="#a3e635" font-size="9">:9090 · scrape 5s</text>
+  <text x="932" y="139" text-anchor="middle" fill="#a3e635" font-size="9">txns_processed_total</text>
+  <text x="932" y="154" text-anchor="middle" fill="#a3e635" font-size="9">detection_latency_ms</text>
+  <text x="932" y="169" text-anchor="middle" fill="#a3e635" font-size="9">fraud_score_distribution</text>
+
+  <rect x="863" y="192" width="139" height="80" rx="7" fill="#0f180f" stroke="#65a30d" stroke-width="1.5"/>
+  <text x="932" y="212" text-anchor="middle" fill="#d9f99d" font-size="11" font-weight="700">Grafana</text>
+  <text x="932" y="228" text-anchor="middle" fill="#a3e635" font-size="9">:3000 · admin/admin</text>
+  <text x="932" y="244" text-anchor="middle" fill="#a3e635" font-size="9">Pre-built dashboards</text>
+  <text x="932" y="260" text-anchor="middle" fill="#a3e635" font-size="9">Prometheus datasource</text>
+
+  <!-- ═══════════════════════════ ARROWS ═══════════════════════════ -->
+  <defs>
+    <marker id="a" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#475569"/>
+    </marker>
+    <marker id="a-blue" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#3b82f6"/>
+    </marker>
+    <marker id="a-amber" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="a-green" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#22c55e"/>
+    </marker>
+    <marker id="a-cyan" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#06b6d4"/>
+    </marker>
+    <marker id="a-orange" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#f97316"/>
+    </marker>
+    <marker id="a-lime" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#84cc16"/>
+    </marker>
+  </defs>
+
+  <!-- Producer → Kafka transactions -->
+  <line x1="147" y1="122" x2="171" y2="120" stroke="#3b82f6" stroke-width="2" marker-end="url(#a-blue)"/>
+  <text x="159" y="114" text-anchor="middle" fill="#60a5fa" font-size="8">produce</text>
+
+  <!-- Kafka → Spark (consume) -->
+  <line x1="302" y1="120" x2="326" y2="140" stroke="#f59e0b" stroke-width="2" marker-end="url(#a-amber)"/>
+  <text x="315" y="114" text-anchor="middle" fill="#fbbf24" font-size="8">consume</text>
+
+  <!-- Spark → Redis (window features) -->
+  <line x1="492" y1="200" x2="516" y2="200" stroke="#06b6d4" stroke-width="1.8" marker-end="url(#a-cyan)"/>
+  <text x="504" y="193" text-anchor="middle" fill="#22d3ee" font-size="8">INCR/GET</text>
+
+  <!-- Spark → Kafka (alerts out) -->
+  <path d="M410 330 Q410 360 237 330 Q237 315 237 298" stroke="#22c55e" stroke-width="2" fill="none" stroke-dasharray="5,3" marker-end="url(#a-green)"/>
+  <text x="320" y="355" text-anchor="middle" fill="#4ade80" font-size="8">fraud-alerts</text>
+
+  <!-- Redis → Dashboard -->
+  <line x1="682" y1="180" x2="706" y2="180" stroke="#f97316" stroke-width="1.8" marker-end="url(#a-orange)"/>
+  <text x="694" y="172" text-anchor="middle" fill="#fb923c" font-size="8">poll</text>
+
+  <!-- Redis → Dashboard (alerts) -->
+  <line x1="682" y1="240" x2="706" y2="240" stroke="#f97316" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#a-orange)"/>
+
+  <!-- Spark → Prometheus -->
+  <line x1="492" y1="140" x2="860" y2="130" stroke="#84cc16" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#a-lime)"/>
+  <text x="680" y="128" text-anchor="middle" fill="#a3e635" font-size="8">/metrics :8000</text>
+
+  <!-- ═══ LEGEND BAR ═══ -->
+  <rect x="10" y="470" width="1000" height="62" rx="6" fill="#0a0f18" stroke="#1e2a3a" stroke-width="1"/>
+  <text x="26" y="488" fill="#475569" font-size="10" font-weight="700">SENIOR-LEVEL FEATURES:</text>
+  <text x="26" y="507" fill="#64748b" font-size="9">✦ Sliding window aggregations (5-min/1-min)</text>
+  <text x="26" y="522" fill="#64748b" font-size="9">✦ Probe-based latency benchmarking (p50/p90/p99)</text>
+  <text x="240" y="507" fill="#64748b" font-size="9">✦ Redis feature store for velocity detection</text>
+  <text x="240" y="522" fill="#64748b" font-size="9">✦ Prometheus metrics + Grafana dashboards</text>
+  <text x="460" y="507" fill="#64748b" font-size="9">✦ 7-rule scoring engine (composable)</text>
+  <text x="460" y="522" fill="#64748b" font-size="9">✦ F1 / precision / recall reporting</text>
+  <text x="660" y="507" fill="#64748b" font-size="9">✦ Streamlit real-time dashboard (2s refresh)</text>
+  <text x="660" y="522" fill="#64748b" font-size="9">✦ Snappy-compressed Kafka topics</text>
+  <text x="860" y="507" fill="#64748b" font-size="9">✦ Full Docker Compose stack</text>
+  <text x="860" y="522" fill="#64748b" font-size="9">✦ Pytest unit test suite</text>
+</svg>
