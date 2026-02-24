@@ -88,7 +88,7 @@ fraud-detection-streaming/
 ### 1. Start the full stack
 
 ```bash
-git clone https://github.com/your-username/fraud-detection-streaming.git
+git clone https://github.com/muhammad-ali-dev0/fraud-detection-streaming.git
 cd fraud-detection-streaming
 docker compose up -d
 ```
